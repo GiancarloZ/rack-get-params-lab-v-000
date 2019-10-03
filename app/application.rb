@@ -22,6 +22,13 @@ class Application
           resp.write"#{c}\n"
         end
       end
+    elsif req.path.match(/add/)
+      add_term = req.params["q"]
+      if handle_search(add_term) = True 
+        @@cart << add_term
+      else
+        resp.write "We don't have that item"
+      end
     else
       resp.write "Path Not Found"
     end
