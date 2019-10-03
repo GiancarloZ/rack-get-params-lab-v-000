@@ -29,6 +29,6 @@ class Application
     end
   end
   
-  
+  def cart
   
 end
