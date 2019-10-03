@@ -30,5 +30,12 @@ class Application
   end
   
   def cart
+    if @@cart.empty?
+      return "Your cart is empty"
+    else
+      return @@cart
+    end
+        
+  end
   
 end
