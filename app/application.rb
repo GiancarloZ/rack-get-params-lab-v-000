@@ -20,6 +20,7 @@ class Application
       else
         @@cart.each do |c|
           resp.write"#{c}"
+        end
       end
     else
       resp.write "Path Not Found"
